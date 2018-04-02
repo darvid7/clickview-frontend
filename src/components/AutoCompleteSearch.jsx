@@ -65,6 +65,7 @@ class AutoCompleteSearch extends Component {
   handleSelectInput = (chosenRequest, index) => {
     // Reset all videos.
     // Filter to query.
+    this.props.state.videoMetaData = this.props.state.videoMetaDataTotal;
     let tokens = chosenRequest.split(': ');
     console.log(tokens);
     let searchMethod = tokens[0];
