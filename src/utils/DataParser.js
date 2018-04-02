@@ -29,7 +29,7 @@ export let categoryParser = function(videos) {
     let videoCategories = metaData['category'];
     videoCategories = videoCategories.split('->');
     videoCategories.forEach((cat) => {
-      if (!cat.includes(cat.toLowerCase())) {
+      if (!categories.includes(cat.toLowerCase())) {
         categories.push(cat.toLowerCase());
       }
     });
